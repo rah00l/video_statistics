@@ -5,3 +5,9 @@
 body, html, .container-fluid {
      height: 100%;
 }
+
+.navbar-form .form-control {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}

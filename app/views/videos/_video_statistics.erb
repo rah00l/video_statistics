@@ -1,0 +1,21 @@
+<ul class="list-group">
+	<li class="list-group-item active">
+		Video Statistics
+	</li>
+	<li class="list-group-item">
+		<span class="badge"><%= @video.try(:view_count) %></span>
+		view count
+	</li>
+	<li class="list-group-item">
+		<span class="badge"><%= @video.try(:like_count) %></span>
+		likes
+	</li>
+	<li class="list-group-item">
+		<span class="badge"><%= @video.try(:dislike_count) %></span>
+		dislikes
+	</li>
+	<li class="list-group-item">
+		<span class="badge"><%= @video.try(:comment_count) %></span>
+		comments
+	</li>
+</ul>
