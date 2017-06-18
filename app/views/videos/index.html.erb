@@ -1,29 +1,21 @@
-<!-- <div class="container">
-	<div class="row-fluid">
-		<div class="col-md-12">
-			Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are "singles" (with one player per side) and "doubles" (with two players per side). Badminton is often played as a casual outdoor activity in a yard or on a beach; formal games are played on a rectangular indoor court. Points are scored by striking the shuttlecock with the racquet and landing it within the opposing side's half of the court.
-		</div>
+<div class="container-fluid">
+	<div class="jumbotron">
+	  <h1 class="display-3">Video Statistics!</h1>
+	  <p class="lead">By using YouTube's Data API v3, retrieve statistics of video.</p>
+	  <hr class="my-4">
+	  <%= form_tag root_path, remote: true, method: 'get', class: "navbar-form" %>
+	  	<p><%= text_field_tag :url, params[:url], placeholder: "Enter url", class: "form-control input-xlarge" %></p>
+	  <p class="lead">
+	    <%= submit_tag "Search", name: nil, class: "btn btn-primary btn-lg" %>
+	  </p>
+	</div>
+</div>
 
-		<div class="col-md-12">
-			Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are "singles" (with one player per side) and "doubles" (with two players per side). Badminton is often played as a casual outdoor activity in a yard or on a beach; formal games are played on a rectangular indoor court. Points are scored by striking the shuttlecock with the racquet and landing it within the opposing side's half of the court.
+	<div class="row-fluid">
+		<div class="panel-body">
+			<div id="video_stast">
+				<%= render 'video_statistics' %>
+			</div>
 		</div>
 	</div>
-		
- </div>-->
-
- <div class="container-fluid">
- 		<div class="panel panel-default" style="height:40%">
- 			<div class="panel-heading">Panel Heading</div>
- 			<div class="panel-body">
- 				Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are "singles" (with one player per side) and "doubles" (with two players per side). Badminton is often played as a casual outdoor activity in a yard or on a beach; formal games are played on a rectangular indoor court. Points are scored by striking the shuttlecock with the racquet and landing it within the opposing side's half of the court.
- 				</div>
- 			<div class="panel-footer">Panel Heading</div>
- 		</div>
- </div>
-
-    <div class="row-fluid">
-        <div class="col-xs-12">
-        	Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are "singles" (with one player per side) and "doubles" (with two players per side). Badminton is often played as a casual outdoor activity in a yard or on a beach; formal games are played on a rectangular indoor court. Points are scored by striking the shuttlecock with the racquet and landing it within the opposing side's half of the court.
-        </div>
-    </div>
 </div>
