@@ -1,2 +1,24 @@
-# video_statistics
-Use YouTube's Data API v3 to retrieve statistics on the video and show the view count, likes:dislikes ratio, and comment:views ratio.
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
