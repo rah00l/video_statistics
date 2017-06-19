@@ -1,21 +1,18 @@
 <ul class="list-group">
-	<li class="list-group-item active">
-		Video Statistics
-	</li>
 	<li class="list-group-item">
+		<span><b>Views</b></span>
+		<span class="glyphicon glyphicon-eye-open"></span>
 		<span class="badge"><%= @video.try(:view_count) %></span>
-		view count
 	</li>
 	<li class="list-group-item">
-		<span class="badge"><%= @video.try(:like_count) %></span>
-		likes
+		<span><b>Likes Dislikes ratio </b></span>
+		<span class="glyphicon glyphicon-thumbs-up"></span> <span class="glyphicon glyphicon-option-vertical"></span><span class="glyphicon glyphicon-thumbs-down"></span>
+		<span class="badge"><%= @video.try(:dislike_count) %></span> <span class="badge"><%= @video.try(:like_count) %></span>
 	</li>
+
 	<li class="list-group-item">
-		<span class="badge"><%= @video.try(:dislike_count) %></span>
-		dislikes
-	</li>
-	<li class="list-group-item">
-		<span class="badge"><%= @video.try(:comment_count) %></span>
-		comments
+		<span><b>Comment views ratio </b></span>
+		<span class="glyphicon glyphicon-comment"></span><span class="glyphicon glyphicon-option-vertical"></span><span class="glyphicon glyphicon-eye-open"></span>
+		<span class="badge"><%= @video.try(:view_count) %></span>  <span class="badge"><%= @video.try(:comment_count) %></span>
 	</li>
 </ul>
